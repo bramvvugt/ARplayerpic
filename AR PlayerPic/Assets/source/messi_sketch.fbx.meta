@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: fb3a87398560c5d4086592d72a7e7235
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bind_Head
+    100002: Bind_Hips
+    100004: Bind_Joint_GRP
+    100006: Bind_LeftArm
+    100008: Bind_LeftFoot
+    100010: Bind_LeftForeArm
+    100012: Bind_LeftHand
+    100014: Bind_LeftHandIndex1
+    100016: Bind_LeftHandIndex2
+    100018: Bind_LeftHandIndex3
+    100020: Bind_LeftHandMiddle1
+    100022: Bind_LeftHandMiddle2
+    100024: Bind_LeftHandMiddle3
+    100026: Bind_LeftHandPinky1
+    100028: Bind_LeftHandPinky2
+    100030: Bind_LeftHandPinky3
+    100032: Bind_LeftHandRing1
+    100034: Bind_LeftHandRing2
+    100036: Bind_LeftHandRing3
+    100038: Bind_LeftHandThumb1
+    100040: Bind_LeftHandThumb2
+    100042: Bind_LeftHandThumb3
+    100044: Bind_LeftLeg
+    100046: Bind_LeftShoulder
+    100048: Bind_LeftToeBase
+    100050: Bind_LeftUpLeg
+    100052: Bind_Neck
+    100054: Bind_RightArm
+    100056: Bind_RightFoot
+    100058: Bind_RightForeArm
+    100060: Bind_RightHand
+    100062: Bind_RightHandIndex1
+    100064: Bind_RightHandIndex2
+    100066: Bind_RightHandIndex3
+    100068: Bind_RightHandMiddle1
+    100070: Bind_RightHandMiddle2
+    100072: Bind_RightHandMiddle3
+    100074: Bind_RightHandPinky1
+    100076: Bind_RightHandPinky2
+    100078: Bind_RightHandPinky3
+    100080: Bind_RightHandRing1
+    100082: Bind_RightHandRing2
+    100084: Bind_RightHandRing3
+    100086: Bind_RightHandThumb1
+    100088: Bind_RightHandThumb2
+    100090: Bind_RightHandThumb3
+    100092: Bind_RightLeg
+    100094: Bind_RightShoulder
+    100096: Bind_RightToeBase
+    100098: Bind_RightUpLeg
+    100100: Bind_Spine
+    100102: Bind_Spine1
+    100104: Bind_Spine2
+    100106: Character
+    100108: goz
+    100110: goz1
+    100112: Joint_GRP
+    100114: kafa
+    100116: Mesh_full_mes
+    100118: Mesh_group1
+    100120: Mesh_GRP
+    100122: //RootNode
+    100124: pCylinder1
+    100126: top1
+    400000: Bind_Head
+    400002: Bind_Hips
+    400004: Bind_Joint_GRP
+    400006: Bind_LeftArm
+    400008: Bind_LeftFoot
+    400010: Bind_LeftForeArm
+    400012: Bind_LeftHand
+    400014: Bind_LeftHandIndex1
+    400016: Bind_LeftHandIndex2
+    400018: Bind_LeftHandIndex3
+    400020: Bind_LeftHandMiddle1
+    400022: Bind_LeftHandMiddle2
+    400024: Bind_LeftHandMiddle3
+    400026: Bind_LeftHandPinky1
+    400028: Bind_LeftHandPinky2
+    400030: Bind_LeftHandPinky3
+    400032: Bind_LeftHandRing1
+    400034: Bind_LeftHandRing2
+    400036: Bind_LeftHandRing3
+    400038: Bind_LeftHandThumb1
+    400040: Bind_LeftHandThumb2
+    400042: Bind_LeftHandThumb3
+    400044: Bind_LeftLeg
+    400046: Bind_LeftShoulder
+    400048: Bind_LeftToeBase
+    400050: Bind_LeftUpLeg
+    400052: Bind_Neck
+    400054: Bind_RightArm
+    400056: Bind_RightFoot
+    400058: Bind_RightForeArm
+    400060: Bind_RightHand
+    400062: Bind_RightHandIndex1
+    400064: Bind_RightHandIndex2
+    400066: Bind_RightHandIndex3
+    400068: Bind_RightHandMiddle1
+    400070: Bind_RightHandMiddle2
+    400072: Bind_RightHandMiddle3
+    400074: Bind_RightHandPinky1
+    400076: Bind_RightHandPinky2
+    400078: Bind_RightHandPinky3
+    400080: Bind_RightHandRing1
+    400082: Bind_RightHandRing2
+    400084: Bind_RightHandRing3
+    400086: Bind_RightHandThumb1
+    400088: Bind_RightHandThumb2
+    400090: Bind_RightHandThumb3
+    400092: Bind_RightLeg
+    400094: Bind_RightShoulder
+    400096: Bind_RightToeBase
+    400098: Bind_RightUpLeg
+    400100: Bind_Spine
+    400102: Bind_Spine1
+    400104: Bind_Spine2
+    400106: Character
+    400108: goz
+    400110: goz1
+    400112: Joint_GRP
+    400114: kafa
+    400116: Mesh_full_mes
+    400118: Mesh_group1
+    400120: Mesh_GRP
+    400122: //RootNode
+    400124: pCylinder1
+    400126: top1
+    2100000: blinn3
+    2100002: lambert1
+    2100004: lambert2
+    2100006: blinn2
+    2100008: lambert4
+    2300000: pCylinder1
+    2300002: top1
+    3300000: pCylinder1
+    3300002: top1
+    4300000: goz
+    4300002: Mesh_full_mes
+    4300004: kafa
+    4300006: goz1
+    4300008: top1
+    4300010: pCylinder1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: goz
+    13700002: goz1
+    13700004: kafa
+    13700006: Mesh_full_mes
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 372
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
