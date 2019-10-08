@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VuforiaUnityInfo version="7.0">
+    <TargetSet version="5.0" toolVersion="2.8.0">
+        <CylinderTarget name="Redbull" version="3.0" targetId="cff8344696c741228110fc9a9474d681" sideLength="13.400000" topDiameter="5.300000" bottomDiameter="5.300000" sideImage="Redbull.Body_scaled.jpg" topImage="Redbull.Top_scaled.jpg" bottomImage="Redbull.Bottom_scaled.jpg"/>
+    </TargetSet>
+</VuforiaUnityInfo>
