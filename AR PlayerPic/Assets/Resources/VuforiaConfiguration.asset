@@ -19,10 +19,10 @@ MonoBehaviour:
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
-    cameraDirection: 0
-    mirrorVideoBackground: 0
+    cameraDirection: 1
+    mirrorVideoBackground: 2
     version: 8.0.10
-    eulaAcceptedVersions: '{"Values":["7.5","8.0"]}'
+    eulaAcceptedVersions: '{"Values":["7.5","8.0","7.1"]}'
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -52,8 +52,8 @@ MonoBehaviour:
     matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 1
-    autoStartTracker: 1
+    autoInitTracker: 0
+    autoStartTracker: 0
     trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
