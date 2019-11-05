@@ -8,6 +8,8 @@ Confidential and Proprietary - Protected under copyright and other laws.
 
 using UnityEngine;
 using Vuforia;
+using UnityEngine.Video;
+using System.Collections;
 
 /// <summary>
 /// A custom handler that implements the ITrackableEventHandler interface.
@@ -17,11 +19,14 @@ using Vuforia;
 /// </summary>
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
+    VideoPlayer video;
+
     #region PROTECTED_MEMBER_VARIABLES
 
     protected TrackableBehaviour mTrackableBehaviour;
     protected TrackableBehaviour.Status m_PreviousStatus;
     protected TrackableBehaviour.Status m_NewStatus;
+
 
     #endregion // PROTECTED_MEMBER_VARIABLES
 
@@ -32,6 +37,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
+        video = gameObject.transform.GetChild(0).gameObject.GetComponent<VideoPlayer>();
+        video.Prepare();
     }
 
     protected virtual void OnDestroy()
@@ -48,6 +55,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     ///     Implementation of the ITrackableEventHandler function called when the
     ///     tracking state changes.
     /// </summary>
+    /// 
+
+ 
     public void OnTrackableStateChanged(
         TrackableBehaviour.Status previousStatus,
         TrackableBehaviour.Status newStatus)
@@ -83,6 +93,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
+
+        StartCoroutine(Scan());
+
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
@@ -98,8 +112,17 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+      
+
     }
 
+    IEnumerator Scan()
+    {
+        video.Play();
+        yield return new WaitForSeconds(2f);
+    }
 
     protected virtual void OnTrackingLost()
     {
