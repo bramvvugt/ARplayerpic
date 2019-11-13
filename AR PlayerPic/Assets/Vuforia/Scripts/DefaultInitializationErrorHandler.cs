@@ -30,6 +30,8 @@ public class DefaultInitializationErrorHandler : VuforiaMonoBehaviour
 
     #endregion // Vuforia_lifecycle_events
 
+
+
     #region PRIVATE_MEMBER_VARIABLES
 
     string mErrorText = "";
