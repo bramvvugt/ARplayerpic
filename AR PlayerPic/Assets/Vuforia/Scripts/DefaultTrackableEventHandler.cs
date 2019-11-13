@@ -41,6 +41,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         video.Prepare();
     }
 
+    public void VideoStop()
+    {
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
     protected virtual void OnDestroy()
     {
         if (mTrackableBehaviour)
@@ -113,7 +118,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        //gameObject.transform.GetChild(0).gameObject.SetActive(true);
       
 
     }
