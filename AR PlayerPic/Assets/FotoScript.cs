@@ -25,17 +25,12 @@ public class FotoScript : MonoBehaviour
         yield return new WaitForEndOfFrame();
 
         // Take screenshot
-       // ScreenCapture.CaptureScreenshot(screenshotName);
-
-
-        // screenshot
-
         Texture2D screenshot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         screenshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         screenshot.Apply();
 
-        // Save the screenshot to Gallery
-        Debug.Log("Permission result: " + NativeGallery.SaveImageToGallery(screenshot, "GalleryTest", screenshotName));
+        // Save the screenshot to Gallery 
+        Debug.Log("Permission result: " + NativeGallery.SaveImageToGallery(screenshot, "PSV speler foto's", screenshotName));
 
         // To avoid memory leaks
         Destroy(screenshot);
