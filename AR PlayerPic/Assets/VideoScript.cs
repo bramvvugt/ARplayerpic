@@ -1,41 +1,21 @@
-﻿using System;
-using System.Collections;
-using System.IO;
-using GetSocialSdk.Capture.Scripts;
-using GetSocialSdk.Capture.Scripts.Internal.Gif;
-using GetSocialSdk.Capture.Scripts.Internal.Recorder;
-using GetSocialSdk.Scripts.Internal.Util;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
-using ThreadPriority = System.Threading.ThreadPriority;
+using Recorder; 
 
 public class VideoScript : MonoBehaviour {
 
-    public GetSocialCapture capture;
 
-    void Awake()
+    public RecordManager recordManager;
+
+
+    public void startVideo()
     {
- 
+        recordManager.StartRecord();
     }
 
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void recordVideo()
+    public void saveVideo()
     {
-        capture.StartCapture();
-    }
-
-    public void stopRecod ()
-    {
-
+        recordManager.StopRecord(); 
     }
 }

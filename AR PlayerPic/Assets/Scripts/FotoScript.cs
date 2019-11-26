@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-
 public class FotoScript : MonoBehaviour
 {
 
@@ -30,8 +29,8 @@ public class FotoScript : MonoBehaviour
         screenshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         screenshot.Apply();
 
-        // Save the screenshot to Gallery
-        Debug.Log("Permission result: " + NativeGallery.SaveImageToGallery(screenshot, "PSV speler foto", screenshotName));
+        // Save the screenshot to Gallery 
+        Debug.Log("Permission result: " + NativeGallery.SaveImageToGallery(screenshot, "PSV speler foto's", screenshotName));
 
         // To avoid memory leaks
         Destroy(screenshot);
