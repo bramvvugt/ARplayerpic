@@ -21,6 +21,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 {
     VideoPlayer video;
     public GameObject scanUI;
+    public GameObject fotoUI;
 
     #region PROTECTED_MEMBER_VARIABLES
 
@@ -40,6 +41,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
         video = gameObject.transform.GetChild(0).gameObject.GetComponent<VideoPlayer>();
         video.Prepare();
+        fotoUI.SetActive(false);
     }
 
     public void VideoStop()
@@ -102,6 +104,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         StartCoroutine(Scan());
         scanUI.SetActive(false);
+        fotoUI.SetActive(true);
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -133,6 +136,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected virtual void OnTrackingLost()
     {
         scanUI.SetActive(true);
+        fotoUI.SetActive(false);
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
