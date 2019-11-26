@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Recorder; 
+using Recorder;
 
 public class VideoScript : MonoBehaviour {
 
@@ -16,6 +16,6 @@ public class VideoScript : MonoBehaviour {
 
     public void saveVideo()
     {
-        recordManager.StopRecord(); 
+        recordManager.StopRecord();
     }
 }
