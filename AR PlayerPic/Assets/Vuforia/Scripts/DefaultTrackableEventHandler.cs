@@ -20,6 +20,7 @@ using System.Collections;
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
     VideoPlayer video;
+    public GameObject scanUI;
 
     #region PROTECTED_MEMBER_VARIABLES
 
@@ -100,7 +101,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
 
         StartCoroutine(Scan());
-
+        scanUI.SetActive(false);
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -131,6 +132,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingLost()
     {
+        scanUI.SetActive(true);
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
