@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.IO;
-using GetSocialSdk.Capture.Scripts;
-using GetSocialSdk.Capture.Scripts.Internal.Gif;
-using GetSocialSdk.Capture.Scripts.Internal.Recorder;
-using GetSocialSdk.Scripts.Internal.Util;
+
 using UnityEngine;
 
 using ThreadPriority = System.Threading.ThreadPriority;
 
 public class VideoScript : MonoBehaviour {
 
-    public GetSocialCapture capture;
+   // public GetSocialCapture capture;
 
     void Awake()
     {
@@ -31,7 +28,7 @@ public class VideoScript : MonoBehaviour {
 
     public void recordVideo()
     {
-        capture.StartCapture();
+    //    capture.StartCapture();
     }
 
     public void stopRecod ()
